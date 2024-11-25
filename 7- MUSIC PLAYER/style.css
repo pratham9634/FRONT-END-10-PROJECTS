@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #17203D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.music-player{
+    width: 540px;
+    padding: 25px 35px;
+    background: linear-gradient(135deg, #fa840e,#f5f523);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+nav .circle{
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: darkblue;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.434);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.music-icon{
+    width: 320px;
+    border-radius: 50%;
+    border: 8px solid whitesmoke;
+}
+.music-player{
+    font-size: 19px;
+    font-weight: 800;
+    color:#fff;
+}
+.progress{
+    -webkit-appearance: none;
+    height: 5px;
+    width: 100%;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    background: #fff;
+}
+.progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #ffff10;
+    border-radius: 50%;
+    border: 3px solid #f65151;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.176);
+}
+.controls{
+    padding: 20px 30px;
+    margin: 10px;
+    display: flex;
+    gap: 180px;
+    align-items: center;
+    justify-content: center;
+}
+.controls div{
+    background: #ffffff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: #f65151;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.controls div:nth-child(2) {
+    transform: scale(2.5);
+    background: linear-gradient( 135deg,#ff9c6a ,  #f24141);
+    color: #fff;
+    box-shadow: 0 5px 15px #ffff106a;
+}
